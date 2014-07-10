@@ -2,9 +2,9 @@ loadJS
 ======
 
 A simple function for asynchronously loading JavaScript files
-[c]2014 @scottjehl, Filament Group, Inc.
-Based on "Surefire Dom Insertion" http://goo.gl/REQGQ by Paul Irish
-Licensed MIT
+- [c]2014 @scottjehl, Filament Group, Inc.
+- Based on "Surefire Dom Insertion" http://goo.gl/REQGQ by Paul Irish
+- Licensed MIT
 
 ## Usage
 
@@ -16,8 +16,9 @@ Then call it by passing it a stylesheet URL:
 <head>
 ...
 <script>
+  // include loadJS here...
   loadJS( src ){ ... }
-  // load a file
+  // load a file with loadJS
   loadJS( "path/to/script.js" );
 </script>
 ...
