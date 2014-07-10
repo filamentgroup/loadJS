@@ -17,7 +17,7 @@ Then call it by passing it a stylesheet URL:
 ...
 <script>
   // include loadJS here...
-  loadJS( src ){ ... }
+  function loadJS( src ){ ... }
   // load a file with loadJS
   loadJS( "path/to/script.js" );
 </script>
