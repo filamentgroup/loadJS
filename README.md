@@ -10,7 +10,7 @@ A simple function for asynchronously loading JavaScript files
 
 Place the [`loadJS` function](https://github.com/filamentgroup/loadJS/blob/master/loadJS.js) inline in the `head` of your page (it can also be included in an external JavaScript file if preferable).
 
-Then call it by passing it a stylesheet URL:
+Then call it by passing it a JavaScript URL:
 
 ``` html
 <head>
