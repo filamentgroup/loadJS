@@ -3,7 +3,7 @@ loadJS
 
 A simple function for asynchronously loading JavaScript files
 - [c]2014 @scottjehl, Filament Group, Inc.
-- Based on "Surefire Dom Insertion" http://www.paulirish.com/2011/surefire-dom-element-insertion/ by Paul Irish
+- Based on [Surefire Dom Element Insertion](http://www.paulirish.com/2011/surefire-dom-element-insertion/) by Paul Irish
 - Licensed MIT
 
 ## Usage
