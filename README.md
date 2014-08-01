@@ -27,7 +27,7 @@ Then call it by passing it a JavaScript URL:
 
 ## Limitations
 
-`loadJS` is does nothing to manage execution order of requested scripts, so we do not advise using it to load multiple javascript files that depend on one another. It simply fetches a script and executes it as soon as possible. You can certainly use `loadJS` to load multiple scripts as long as those scripts are designed to execute independently of any other scripts being loaded by `loadJS`. 
+`loadJS` does nothing to manage execution order of requested scripts, so we do not advise using it to load multiple javascript files that depend on one another. It simply fetches a script and executes it as soon as possible. You can certainly use `loadJS` to load multiple scripts as long as those scripts are designed to execute independently of any other scripts being loaded by `loadJS`. 
 
 #### Contributions and bug fixes
 
