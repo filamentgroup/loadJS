@@ -3,7 +3,7 @@ function loadJS( src ){
 	"use strict";
 	if (src instanceof Array) {
 		for (var i = 0; i < src.length; i++){
-			load( src[i] )
+			_loadJS( src[i] )
 		}
 	}else{
 		_loadJS( src )
