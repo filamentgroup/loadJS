@@ -6,12 +6,7 @@ function loadJS( src, cb ){
 	script.src = src;
 	ref.parentNode.insertBefore( script, ref );
 	if (cb) {
-		script.onload = function(){
-			try {
-				cb();
-			}
-			catch (e) {}
-		};
+		script.onload = cb;
 	}
 	return script;
 }
