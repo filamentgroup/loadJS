@@ -5,7 +5,7 @@ function loadJS( src, cb ){
 	var script = window.document.createElement( "script" );
 	script.src = src;
 	ref.parentNode.insertBefore( script, ref );
-	if (cb) {
+	if (cb && typeof(callback) === 'function') {
 		script.onload = cb;
 	}
 	return script;
