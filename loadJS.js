@@ -3,6 +3,7 @@ function loadJS( src, cb ){
 	"use strict";
 	var ref = window.document.getElementsByTagName( "script" )[ 0 ];
 	var script = window.document.createElement( "script" );
+	script.type = "text/javascript"
 	script.src = src;
 	ref.parentNode.insertBefore( script, ref );
 	if (cb) {
