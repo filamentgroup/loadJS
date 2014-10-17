@@ -6,7 +6,7 @@ function loadJS( src, cb ){
 	script.src = src;
 	script.async = true;
 	ref.parentNode.insertBefore( script, ref );
-	if (cb && typeof(callback) === 'function') {
+	if (cb && typeof(cb) === 'function') {
 		script.onload = cb;
 	}
 	return script;
