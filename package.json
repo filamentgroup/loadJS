@@ -1,0 +1,22 @@
+{
+  "name": "fg-loadjs",
+  "version": "0.2.0",
+  "description": "A simple function for asynchronously loading JavaScript files",
+  "main": "loadJS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/filamentgroup/loadJS.git"
+  },
+  "keywords": [
+    "load"
+  ],
+  "author": "Zach Leatherman <zachleatherman@gmail.com> (http://zachleat.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/filamentgroup/loadJS/issues"
+  },
+  "homepage": "https://github.com/filamentgroup/loadJS"
+}
