@@ -13,7 +13,7 @@
 		return script;
 	};
 	// commonjs
-	if( module ){
+	if( typeof module !== "undefined" ){
 		module.exports = w.loadJS;
 	}
 }( this ));
