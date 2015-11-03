@@ -16,4 +16,4 @@
 	if( typeof module !== "undefined" ){
 		module.exports = w.loadJS;
 	}
-}( this ));
+}( typeof global !== "undefined" ? global : this ));
