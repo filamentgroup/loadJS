@@ -25,6 +25,23 @@ Then call it by passing it a JavaScript URL:
 </head>
 ```
 
+You can execute code after the Script has loaded via a callback:
+
+``` html
+<head>
+...
+<script>
+  // include loadJS here...
+  function loadJS( src ){ ... }
+  // load a file with loadJS
+  loadJS( "path/to/script.js", function() {
+    // file has loaded
+  });
+</script>
+...
+</head>
+```
+
 ## Why not just use `<script src="..." async defer>`?
 
 The `async` and `defer` attributes enjoy broad browser support. They're great options when all you need to do is load a script for all users, ideally in a non-blocking manner. The limitations with these attributes are: 
