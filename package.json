@@ -2,8 +2,10 @@
   "name": "fg-loadjs",
   "version": "0.2.3",
   "description": "A simple function for asynchronously loading JavaScript files.",
-  "main": "src/loadJS.js",
+  "main": "dist/loadJS.js",
   "scripts": {
+    "build": "./scripts/build.js; ./scripts/stats.js",
+    "stats": "./scripts/stats.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,14 +17,20 @@
     "load",
     "performance"
   ],
-  "author": {
-    "name": "Filament Group",
-    "email": "hello@filamentgroup.com",
-    "url": "https://www.filamentgroup.com"
-  },
+  "contributors": [
+    "Scott Jehl (http://www.scottjehl.com)",
+    "Filament Group, Inc. <hello@filamentgroup.com> (https://www.filamentgroup.com)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/filamentgroup/loadJS/issues"
   },
-  "homepage": "https://github.com/filamentgroup/loadJS"
+  "homepage": "https://github.com/filamentgroup/loadJS",
+  "devDependencies": {
+    "cli-table": "^0.3.1",
+    "colors": "^1.1.2",
+    "comma-number": "^1.1.0",
+    "gzip-size": "^3.0.0",
+    "uglify-js": "^2.6.2"
+  }
 }

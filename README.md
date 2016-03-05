@@ -2,9 +2,26 @@
 
 A simple function for asynchronously loading JavaScript files.
 
-- (c) 2014–present @scottjehl, Filament Group, Inc.
+- (c) 2014–present [Scott Jehl](http://www.scottjehl.com/), [Filament Group, Inc.](https://www.filamentgroup.com/)
 - Based on Paul Irish's [Surefire DOM Element Insertion](http://www.paulirish.com/2011/surefire-dom-element-insertion/).
 - MIT-licensed.
+
+<table>
+  <tbody>
+    <tr>
+      <th>Uncompressed</th>
+      <td>744 bytes</td>
+    </tr>
+    <tr>
+      <th>Minified</th>
+      <td>544 bytes</td>
+    </tr>
+    <tr>
+      <th>Minifed and gzipped</th>
+      <td>382 bytes</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Usage
 
@@ -58,3 +75,5 @@ Number 2 above is the main reason we use `loadJS`. Say you want to check if `que
 ## Contributions and Bug Fixes
 
 Both are very much appreciated—especially bug fixes. As for contributions, this project's goals are to keep things very simple and utilitarian, so if we don't accept a feature addition, it's not necessarily because it's a bad idea. It just may not meet the goals of the project. Thanks!
+
+Additional details can be found in [the CONTRIBUTING.md file](./CONTRIBUTING.md).
