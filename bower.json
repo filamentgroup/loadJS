@@ -1,0 +1,29 @@
+{
+  "name": "loadjs",
+  "version": "0.2.3",
+  "homepage": "https://github.com/filamentgroup/loadJS",
+  "authors": [
+    "Filament Group <hello@filamentgroup.com> (https://www.filamentgroup.com)"
+  ],
+  "description": "A simple function for asynchronously loading JavaScript files.",
+  "main": "src/loadJS.js",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "javascript",
+    "load",
+    "performance"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/filamentgroup/loadJS.git"
+  }
+}
