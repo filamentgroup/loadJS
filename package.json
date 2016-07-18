@@ -1,6 +1,6 @@
 {
   "name": "fg-loadjs",
-  "version": "0.2.3",
+  "version": "1.0.0",
   "description": "A simple function for asynchronously loading JavaScript files",
   "main": "loadJS.js",
   "scripts": {
