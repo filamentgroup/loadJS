@@ -64,8 +64,8 @@ Number 2 above is the main reason we use `loadJS`. Say you want to check if `que
 
 ## Limitations
 
-* Ordered execution does not work in IE9-, so we do not advise using it to load multiple javascript files that depend on one another. It simply fetches a script and executes it as soon as possible. You can certainly use `loadJS` to load multiple scripts as long as those scripts are designed to execute independently of any other scripts being loaded by `loadJS`.
-* If placed below external blocking scrips or stylesheets the download starts only after these files are downloaded and parsed. A good workaround for `async` script loading of crucial scripts is to inline `loadJS` before any other stylesheets and scripts and use it either immediately or within a `setTimeout`/`requestAnimationFrame`.
+* If placed below external blocking scrips or stylesheets the download starts only after these files are downloaded and parsed. A good workaround for `async` script loading of crucial scripts is to inline `loadJS` before any other stylesheets and scripts and use it either immediately or within a `setTimeout`.
+* Ordered execution does not work in IE9-.
 
 ```html
 <script>
