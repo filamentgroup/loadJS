@@ -1,0 +1,49 @@
+<!doctype HTML>
+<html>
+
+<head>
+	<title>JS link[rel=preload]</title>
+	<meta charset="utf-8">
+	<link rel="preload" href="test.js" as="script" media="(min-width: 800px)" onload="applyScript(this.href)">
+	<script>
+		// preload support test
+		var preloadSupported = (function() {
+			try {
+				return document.createElement("link").relList.supports("preload");
+			} catch (e) {
+				return false;
+			}
+		})();
+		// apply on load
+		function applyScript(src) {
+			var js = document.createElement("script");
+			js.src = src;
+			document.head.insertBefore(js, document.head.firstChild);
+		}
+		// polyfill
+		if (!preloadSupported) {
+			var links = document.getElementsByTagName("link");
+			for (var i = 0; i < links.length; i++) {
+				var link = links[i];
+				// qualify links to those with rel=preload and as=style attrs
+				if (link.rel === "preload" && link.getAttribute("as") === "script" && !link.getAttribute("data-loaded")) {
+					// prevent rerunning on link
+					link.setAttribute("data-loaded", true);
+					// if no media specified or media does match
+					if (!link.media || matchMedia(link.media).matches) {
+						applyScript(link.href);
+					}
+				}
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<h1>Qualified, Markup-driven JS loading w/ link[rel=preload]</h1>
+	<p>This is a test page that references a script using rel=preload and a media query qualifier <code> media="(min-width: 800px)"</code>.</p>
+	<p>In browsers that support preload, if the viewport size is greater than 800px wide, the script will load and execute. In narrower viewport sizes, it will never load at all. </p>
+
+</body>
+
+</html>
