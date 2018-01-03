@@ -3,6 +3,7 @@
 	<head>
 		<title>JS link[rel=preload]</title>
 		<meta charset="utf-8">
+		<link rel="preload" href="test.js" as="script" media="(min-width: 800px)" onload="applyScript(this.href)">
     <script>
     function applyScript(src){
       var js = document.createElement( "script" );
@@ -10,8 +11,6 @@
       document.head.insertBefore( js, document.head.firstChild );
     }
     </script>
-    <link rel="preload" href="test.js" as="script" media="(min-width: 800px)" onload="applyScript(this.href)">
-
 	</head>
 	<body>
 		<h1>Qualified, Markup-driven JS loading w/ link[rel=preload]</h1>
