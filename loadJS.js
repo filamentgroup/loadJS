@@ -7,7 +7,7 @@
 		script.src = src;
 		script.async = true;
 		ref.parentNode.insertBefore( script, ref );
-		if (cb && typeof(cb) === "function") {
+		if (cb && typeof cb === "function") {
 			script.onload = cb;
 		}
 		return script;
