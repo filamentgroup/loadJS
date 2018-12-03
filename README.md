@@ -1,6 +1,7 @@
 loadJS
 ======
 
+[![NPM version](http://img.shields.io/npm/v/fg-loadjs.svg)](https://www.npmjs.org/package/fg-loadjs)
 [![Dependency Status](https://david-dm.org/filamentgroup/loadJS.svg)](https://david-dm.org/filamentgroup/loadJS)
 [![devDependency Status](https://david-dm.org/filamentgroup/loadJS/dev-status.svg)](https://david-dm.org/filamentgroup/loadJS#info=devDependencies)
 
