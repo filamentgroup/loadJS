@@ -68,7 +68,7 @@ Number 2 above is the main reason we use `loadJS`. Say you want to check if `que
 
 ## Limitations
 
-* If placed below external blocking scrips or stylesheets the download starts only after these files are downloaded and parsed. A good workaround for `async` script loading of crucial scripts is to inline `loadJS` before any other stylesheets and scripts and use it either immediately or within a `setTimeout`.
+* If placed below external blocking scripts or stylesheets the download starts only after these files are downloaded and parsed. A good workaround for `async` script loading of crucial scripts is to inline `loadJS` before any other stylesheets and scripts and use it either immediately or within a `setTimeout`.
 * Ordered execution does not work in IE9-.
 
 ```html
